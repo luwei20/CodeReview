@@ -15,7 +15,7 @@ cfiles = cfiles_gcc + cfiles_llvm
 # cfiles = ['/home/lw/ctx/hello.c']
 
 def compile_and_run(cfile, Olevel):
-    exe_file = cfile.replace('.c', f'_{Olevel}')
+    exe_file = c_file.replace('.c', f'_{Olevel}')
     compile_cmd =  ['clang', cfile, '-o', exe_file, Olevel]
     try:
         # 编译
